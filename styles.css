@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-box {
+  width: 90%;
+  height: 30%;
+  background-color: rgb(49, 49, 49);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 20px solid rgb(71, 71, 71);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #2176ca, #20c920);
+}
+
+.header {
+  color: white;
+}
+
+.hour {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  color: orange;
+  width: 10%;
+  text-align: center;
+  background-color: rgb(104, 86, 86);
+}
+.hour p {
+  font-size: 2rem;
+  padding: 10px 0;
+  margin: 0;
+}
