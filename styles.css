@@ -86,7 +86,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  bottom: 10%;
+  bottom: 7%;
   width: 92%;
   height: 50%;
   padding: 10px;
@@ -106,16 +106,17 @@ body {
 }
 .right-content {
   display: flex;
+  margin-right: 2%;
 }
 
 .left-content {
   display: flex;
   gap: 50px;
+  margin-left: 2%;
 }
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-
-  gap: 20px; /* Odstęp między elementami listy */
+  gap: 20px;
 }
