@@ -3,7 +3,7 @@ const direction = document.querySelector(".direction");
 const departure = document.querySelector(".departure");
 const time = document.getElementById("time");
 function fetchDepartures() {
-  fetch("https://www.zditm.szczecin.pl/api/v1/displays/97311")
+  fetch("https://www.zditm.szczecin.pl/api/v1/displays/97312")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok " + response.statusText);
@@ -67,3 +67,21 @@ function calculateTime(apiTime, departureElement) {
     departureElement.innerText = `${diff} min`;
   }
 }
+//For testing purposes only, to check stop number
+// fetch("https://www.zditm.szczecin.pl/api/v1/stops")
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error("Network response was not ok " + response.statusText);
+//     }
+//     return response.json();
+//   })
+//   .then((data) => {
+//     data.data.forEach((element) => {
+//       if (element.name.includes("Dobra")) {
+//         console.log(element.name, element.number);
+//       }
+//     });
+//   })
+//   .catch((error) => {
+//     console.error("There was a problem with the fetch operation:", error);
+//   });
